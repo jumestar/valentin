@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Josias">
+    <link rel="stylesheet" href="valentin.css">
+</head>
+<body>
+    <div id="initial-content">
+        <img src="josias.jpg" alt="img" height="400px" width="900px" class="josias">
+        <h2>Veux-tu être ma valentine ?</h2>
+    </div>
+
+    <div class="button-container">
+        <button class="btn btn1" onclick="showVideo('video1')">Oui</button>
+        <button class="btn btn2" onclick="showVideo('video1')">Non</button>
+    </div>
+
+    <div id="video-container" class="video-container" style="display: none;">
+        <video id="video1" height="400px" width="600" autoplay muted>
+            <source src="josias.mp4" type="video/mp4">
+            Ton navigateur ne prend pas en charge la vidéo.
+        </video>
+        <div id="text-container"><h2>Félicitations tu es ma valentine ❤️</h2></div>
+    </div>
+
+    <script src="valentin.js"></script>
+</body>
+</html>
